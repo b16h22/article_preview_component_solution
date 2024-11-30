@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+  <script src="https://kit.fontawesome.com/f104e08acd.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img class="cover-img" src="./images/drawers.jpg" alt="drawers">
+      <div class="content">
+        <div class="text-area">
+          <h3 class="title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h3>
+          <p class="subtitle">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+        </div>
+        <div class="footer">
+          <div class="profile-section">
+            <img class="dp" src="./images/avatar-michelle.jpg" alt="avatar">
+            <div class="details">
+              <p class="name">Michelle Appleton</p>
+              <p class="date">28 Jun 2020</p>
+            </div>
+          </div>
+          <div id="popup" class="share-popup">
+            <p class="share-text">SHARE</p>
+            <img class="social-icons" src="./images/icon-facebook.svg" alt="facebook">
+            <img class="social-icons" src="./images/icon-twitter.svg" alt="twitter">
+            <img class="social-icons" src="./images/icon-pinterest.svg" alt="pinterest">
+          </div>
+          <i id="share" class="fa-solid fa-share"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let sharePopup = document.getElementById("popup");
+    let shareButton = document.getElementById("share");
+
+    sharePopup.style.display = "none";
+    shareButton.onclick = openPopup;
+
+    function openPopup() {
+      if (sharePopup.style.display == "none") {
+        sharePopup.style.display = "flex";
+      } else {
+        sharePopup.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
