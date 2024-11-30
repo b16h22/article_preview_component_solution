@@ -27,7 +27,7 @@
     }
 
     .cover-img {
-      width: 100%;
+      width: 40%;
       object-fit: cover;
       object-position: 10% 0;
       border-radius: 1rem 0 0 1rem;
